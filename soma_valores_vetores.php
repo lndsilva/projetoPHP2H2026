@@ -4,14 +4,19 @@
 
 	$num2 = array(50,60,70,80);
 
+	$resp = 0;
+	$resp2 = 0;
 
 	for ($i=0; $i < count($num1) ; $i++) { 
-		$resp[$i] = $num1[$i]+$num2[$i];
-		
+		$resp = $resp + $num1[$i];
 	}
-	echo " ------------ <br>";
+
 	for ($i=0; $i < sizeof($num2) ; $i++) { 
-		echo $resp[$i] . "<br>";
+		$resp2 = $resp2 + $num2[$i];
 	}
+
+	echo $resp . "<br>";
+	echo $resp2;
+
 
  ?>
